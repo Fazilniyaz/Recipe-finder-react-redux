@@ -18,7 +18,7 @@ const SearchResults = () => {
         setLoading(true);
 
         const response = await axios.get(
-          `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=YOUR_APP_ID&app_key=YOUR_APP_KEY`
+          `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=a5de3521&app_key=28f8a20bd893e2740e68d4bbb349b977&from=0&to=50`
         );
 
         const filteredResults = response.data.hits.filter((item) =>
